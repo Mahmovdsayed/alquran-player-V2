@@ -137,7 +137,7 @@ const Prayer = () => {
 
             {prayerTimes && (
                 <div className="space-y-6">
-                    <Card className='rounded-4xl'>
+                    <Card className='rounded-4xl dark:bg-black'>
                         <CardHeader>
                             <CardTitle className="flex flex-col gap-2 text-lg md:text-xl">
                                 <div className="flex items-center gap-2">
@@ -171,7 +171,7 @@ const Prayer = () => {
                         <Separator />
 
                         <CardFooter className='flex justify-center items-center'>
-                            <div className="flex items-center gap-2 text-sm text-muted-foreground text-center">
+                            <div className="flex items-center gap-2 text-xs md:text-sm text-muted-foreground text-center">
                                 <Calendar className="h-4 w-4" />
                                 <span>
                                     {date.data.date.hijri.weekday.en} {date.data.date.hijri.day}{' '}

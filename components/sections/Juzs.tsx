@@ -34,7 +34,7 @@ const JuzsSection = () => {
                         className="h-full"
                     >
                         <Card className="h-full flex flex-col hover:shadow-lg transition-all duration-300 border-border dark:bg-black rounded-4xl">
-                            <div className="p-5 flex-1">
+                            <div className="px-5 flex-1">
                                 <div className="flex items-center justify-between mb-4">
                                     <div className="flex items-center gap-3">
                                         <div className="flex items-center justify-center w-12 h-12 rounded-3xl bg-secondary font-bold">

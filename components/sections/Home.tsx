@@ -20,10 +20,10 @@ const Home = () => {
         <div className="w-full">
             <Tabs defaultValue="surah" className="w-full">
                 <div className="flex justify-center mb-6">
-                    <TabsList>
-                        <TabsTrigger value="surah">Surah <Badge className="rounded-sm ml-2" variant="outline">114</Badge></TabsTrigger>
-                        <TabsTrigger value="prayer">Prayer Times <Badge className="rounded-sm ml-2" variant="outline">5</Badge></TabsTrigger>
-                        <TabsTrigger value="juzs">Juzs <Badge className="rounded-sm ml-2" variant="outline">30</Badge></TabsTrigger>
+                    <TabsList className="bg-sidebar dark:bg-black dark:border">
+                        <TabsTrigger value="surah">Surah <Badge className="rounded-sm ml-2" variant="secondary">114</Badge></TabsTrigger>
+                        <TabsTrigger value="prayer">Prayer Times <Badge className="rounded-sm ml-2" variant="secondary">5</Badge></TabsTrigger>
+                        <TabsTrigger value="juzs">Juzs <Badge className="rounded-sm ml-2" variant="secondary">30</Badge></TabsTrigger>
                     </TabsList>
                 </div>
 
