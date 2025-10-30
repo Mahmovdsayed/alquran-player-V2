@@ -34,6 +34,18 @@ export const getRandomAyah = async () => {
   }
 };
 
+export const surahDataTranslation = async (surahID: string) => {
+  try {
+    const { data } = await api.get(
+      `/quran/translations/57?fields=id,chapter_id,verse_number,verse_key,verse_index&chapter_number=${surahID}`
+    );
+    return data;
+  } catch (error) {
+    console.log(error);
+    return null;
+  }
+};
+
 export const getChapter = async (chapterNumber: string) => {
   try {
     const { data } = await api.get(`/chapters/${chapterNumber}`);
@@ -57,6 +69,16 @@ export const getJuzData = async (juzNumber: string) => {
     const { data } = await axios.get(
       `https://api.alquran.cloud/v1/juz/${juzNumber}/ar.alafasy`
     );
+    return data;
+  } catch (error) {
+    console.log(error);
+    return null;
+  }
+};
+
+export const getSurahInfo = async (surahID: string) => {
+  try {
+    const { data } = await api.get(`/chapters/${surahID}/info`);
     return data;
   } catch (error) {
     console.log(error);

@@ -1,19 +1,19 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 interface ReciterState {
-  selectedReciterId: string; 
+  selectedReciterId: string;
 }
 
 const initialState: ReciterState = {
-  selectedReciterId: "ar.alafasy", 
+  selectedReciterId: "ar.alafasy",
 };
 
 export const reciterSlice = createSlice({
-  name: "reciter", 
-  initialState, 
+  name: "reciter",
+  initialState,
   reducers: {
     setSelectedReciter: (state, action: PayloadAction<string>) => {
-      state.selectedReciterId = action.payload; 
+      state.selectedReciterId = action.payload;
     },
   },
 });

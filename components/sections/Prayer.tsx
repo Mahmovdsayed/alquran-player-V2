@@ -119,7 +119,7 @@ const Prayer = () => {
     ];
 
     return (
-        <div className='container mx-auto  max-w-2xl'>
+        <div className='mx-auto max-w-5xl'>
             {loading && (
                 <div className="flex flex-col items-center justify-center gap-4 py-8">
                     <Loader2 className="h-8 w-8 animate-spin text-muted-foreground" />

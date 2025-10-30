@@ -23,7 +23,6 @@ const Home = () => {
                     <TabsList className="bg-sidebar dark:bg-black dark:border">
                         <TabsTrigger value="surah">Surah <Badge className="rounded-sm ml-2" variant="secondary">114</Badge></TabsTrigger>
                         <TabsTrigger value="prayer">Prayer Times <Badge className="rounded-sm ml-2" variant="secondary">5</Badge></TabsTrigger>
-                        <TabsTrigger value="juzs">Juzs <Badge className="rounded-sm ml-2" variant="secondary">30</Badge></TabsTrigger>
                     </TabsList>
                 </div>
 
@@ -102,7 +101,6 @@ const Home = () => {
                     </div>
                 </TabsContent>
                 <TabsContent value="prayer"><Prayer /></TabsContent>
-                <TabsContent value="juzs"><JuzsSection /></TabsContent>
             </Tabs>
         </div>
     );
