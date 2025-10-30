@@ -264,6 +264,7 @@ const Plays = ({ surahID }: IProps) => {
                             variant="ghost"
                             size="icon"
                             onClick={skipToPrevious}
+                            aria-label="Skip-Back"
                             disabled={!previousSurah}
                             className="h-12 w-12 hover:bg-accent/10"
                         >
@@ -274,6 +275,7 @@ const Plays = ({ surahID }: IProps) => {
                             size="icon"
                             onClick={togglePlayPause}
                             disabled={isLoading}
+                            aria-label={isPlaying ? "Pause" : "Play"}
                             className="h-16 w-16 rounded-full bg-accent hover:bg-accent/90 text-accent-foreground shadow-lg"
                         >
                             {isLoading ? (
@@ -288,6 +290,7 @@ const Plays = ({ surahID }: IProps) => {
                         <Button
                             variant="ghost"
                             size="icon"
+                            aria-label="Skip-Forward"
                             onClick={skipToNext}
                             disabled={!nextSurah}
                             className="h-12 w-12 hover:bg-accent/10"

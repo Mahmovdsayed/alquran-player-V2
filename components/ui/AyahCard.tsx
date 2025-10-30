@@ -108,6 +108,7 @@ const AyahCard = ({
                             onClick={handlePlayPause}
                             disabled={isLoading}
                             className="h-9 w-9"
+                            aria-label={isPlaying ? "Pause" : "Play"}
                         >
                             {isLoading ? (
                                 <div className="h-4 w-4 animate-spin rounded-full border-2 border-current border-t-transparent" />

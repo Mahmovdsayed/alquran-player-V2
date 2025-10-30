@@ -103,6 +103,7 @@ const SurahSection = ({ surahID, url }: IProps) => {
                         variant={isAutoPlayEnabled ? "secondary" : "outline"}
                         className="gap-2 mb-3"
                         size={"sm"}
+                        aria-label={isAutoPlayEnabled ? "Stop Auto-Play" : "Start Auto-Play"}
                     >
                         {isAutoPlayEnabled ? (
                             <>
