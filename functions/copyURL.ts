@@ -8,7 +8,7 @@ export const handleShare = async (url: string) => {
         url,
       });
     } catch (err) {
-      toast.error("Failed to share blog!");
+      toast.error("Failed to share the link!");
     }
   } else {
     navigator.clipboard.writeText(url);
