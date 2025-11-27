@@ -6,7 +6,7 @@ interface ReciterState {
 
 const initialState: ReciterState = {
   selectedReciterId: "ar.alafasy",
-};ddddd
+};
 
 export const reciterSlice = createSlice({
   name: "reciter",

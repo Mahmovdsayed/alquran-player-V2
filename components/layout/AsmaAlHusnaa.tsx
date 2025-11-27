@@ -11,10 +11,10 @@ const AsmaAlHusnaa = () => {
                     <motion.div
                         className='flex gap-14 flex-none pr-14'
                         animate={{
-                            translateX: ["1%", "-100%"], 
+                            translateX: ["1%", "-100%"],
                         }}
                         transition={{
-                            duration: 500, 
+                            duration: 500,
                             repeat: Infinity,
                             ease: "linear",
                             repeatType: "loop"
