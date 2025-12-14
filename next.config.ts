@@ -46,6 +46,11 @@ const nextConfig: NextConfig = {
     memoryBasedWorkersCount: true,
   },
 
+  // Turbopack configuration (Next.js 16 default)
+  // Empty config acknowledges we're using Turbopack
+  // Most webpack optimizations are built into Turbopack
+  turbopack: {},
+
   // Production source maps (disable for faster builds, enable for debugging)
   productionBrowserSourceMaps: false,
 
