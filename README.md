@@ -171,8 +171,8 @@ alquran-player/
 
 ### Prerequisites
 
-- **Node.js** 18.0 or higher
-- **npm**, **yarn**, **pnpm**, or **bun** package manager
+- **Bun** 1.0 or higher ([Install Bun](https://bun.sh/))
+  - Alternatively: **Node.js** 18.0 or higher with **npm**, **yarn**, or **pnpm**
 
 ### Installation
 
@@ -186,16 +186,30 @@ alquran-player/
 2. **Install dependencies**
 
    ```bash
+   bun install
+   ```
+
+   <details>
+   <summary>Or use other package managers</summary>
+
+   ```bash
    npm install
    # or
    yarn install
    # or
    pnpm install
-   # or
-   bun install
    ```
 
+   </details>
+
 3. **Run the development server**
+
+   ```bash
+   bun dev
+   ```
+
+   <details>
+   <summary>Or use other package managers</summary>
 
    ```bash
    npm run dev
@@ -203,9 +217,9 @@ alquran-player/
    yarn dev
    # or
    pnpm dev
-   # or
-   bun dev
    ```
+
+   </details>
 
 4. **Open your browser**
 
@@ -214,8 +228,8 @@ alquran-player/
 ### Build for Production
 
 ```bash
-npm run build
-npm run start
+bun run build
+bun start
 ```
 
 ---

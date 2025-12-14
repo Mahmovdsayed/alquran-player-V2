@@ -2,11 +2,23 @@
   "name": "alquran-player",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbo",
+    "dev:debug": "NODE_OPTIONS='--inspect' next dev --turbo",
     "build": "next build",
+    "build:analyze": "ANALYZE=true next build",
     "start": "next start",
-    "lint": "eslint"
+    "start:prod": "NODE_ENV=production next start -p 3000",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf .next node_modules",
+    "reinstall": "bun run clean && bun install"
+  },
+  "engines": {
+    "bun": ">=1.0.0",
+    "node": ">=18.0.0"
   },
   "dependencies": {
     "@quranjs/api": "^2.0.0",
@@ -49,6 +61,7 @@
     "eslint-config-next": "16.0.1",
     "tailwindcss": "^4",
     "tw-animate-css": "^1.4.0",
-    "typescript": "^5"
+    "typescript": "^5",
+    "webpack-bundle-analyzer": "^5.1.0"
   }
 }

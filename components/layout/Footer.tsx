@@ -1,8 +1,6 @@
-'use client'
 
 import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
-import Image from "next/image";
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
@@ -40,23 +38,6 @@ const Footer = () => {
                             Listen
                         </Link>
                     </nav>
-
-                    <div className="my-2">
-                        <a
-                            href="https://www.producthunt.com/posts/al-quran-player?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-al-quran-player"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="AL-Quran Player on Product Hunt"
-                        >
-                            <Image
-                                src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1033156&theme=neutral"
-                                alt="AL-Quran Player - Quran player - read, listen & explore the holy quran online | Product Hunt"
-                                width={200}
-                                height={54}
-                                className="hover:opacity-80 transition-opacity"
-                            />
-                        </a>
-                    </div>
 
                     <p className="text-xs text-muted-foreground pt-2">
                         © {currentYear} AL-Quran Player. All rights reserved.
