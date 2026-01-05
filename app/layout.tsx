@@ -6,6 +6,7 @@ import Navigation from "@/components/layout/Navigation";
 import Footer from "@/components/layout/Footer";
 import { Analytics } from "@vercel/analytics/react";
 import AdSense from "@/components/layout/AdSense";
+import ServiceWorkerRegistration from "@/components/pwa/ServiceWorkerRegistration";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -120,6 +121,15 @@ export default function RootLayout({
         <AdSense pId="ca-pub-7851367835426330" />
         <meta name="theme-color" content="#f7f7f7" media="(prefers-color-scheme: light)" />
         <meta name="theme-color" content="#353535" media="(prefers-color-scheme: dark)" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="apple-mobile-web-app-title" content="Quran Player" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="/icons/icon-152x152.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="/icons/icon-128x128.png" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}>
         <Providers>
@@ -127,6 +137,7 @@ export default function RootLayout({
           {children}
           <Analytics />
           <Footer />
+          <ServiceWorkerRegistration />
         </Providers>
       </body>
     </html>
