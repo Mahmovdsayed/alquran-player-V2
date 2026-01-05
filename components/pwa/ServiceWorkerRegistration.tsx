@@ -5,13 +5,13 @@ import { useEffect } from "react";
 export default function ServiceWorkerRegistration() {
     useEffect(() => {
         if (typeof window !== "undefined" && "serviceWorker" in navigator) {
-            window.addEventListener("load", async () => {
+            const registerSW = async () => {
                 try {
                     const registration = await navigator.serviceWorker.register("/sw.js", {
                         scope: "/",
                     });
 
-                    console.log("[PWA] Service Worker registered successfully:", registration.scope);
+                    console.log("[PWA] Service Worker registered:", registration.scope);
 
                     registration.addEventListener("updatefound", () => {
                         const newWorker = registration.installing;
@@ -26,7 +26,9 @@ export default function ServiceWorkerRegistration() {
                 } catch (error) {
                     console.error("[PWA] Service Worker registration failed:", error);
                 }
-            });
+            };
+
+            registerSW();
         }
     }, []);
 
